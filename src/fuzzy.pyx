@@ -90,7 +90,8 @@ def nysiis(s):
 
     first = ''
     if stop:
-        first = s[0]
+        foo = s[0]
+        first = foo
 
 
     # Find index without trailing SZs
