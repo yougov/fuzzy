@@ -6,5 +6,6 @@ setup(
     name        = 'Polimetrix-Fuzzy',
     version     = '1.0',
     ext_modules = [Extension('fuzzy', ['src/fuzzy.pyx', 'src/double_metaphone.c'])],
-    cmdclass    = {'build_ext' : build_ext}
+    cmdclass    = {'build_ext' : build_ext},
+    zip_safe    = False
 )
