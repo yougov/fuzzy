@@ -30,9 +30,15 @@ basic installation on a clean virtualenv::
     Installing collected packages: Fuzzy
       Running setup.py install for Fuzzy
         building 'fuzzy' extension
-        gcc-4.2 -fno-strict-aliasing -fno-common -dynamic -DNDEBUG -g -fwrapv -Os -Wall -Wstrict-prototypes -DENABLE_DTRACE -arch i386 -arch ppc -arch x86_64 -pipe -I/System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c src/fuzzy.c -o build/temp.macosx-10.6-universal-2.6/src/fuzzy.o
-        gcc-4.2 -fno-strict-aliasing -fno-common -dynamic -DNDEBUG -g -fwrapv -Os -Wall -Wstrict-prototypes -DENABLE_DTRACE -arch i386 -arch ppc -arch x86_64 -pipe -I/System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6 -c src/double_metaphone.c -o build/temp.macosx-10.6-universal-2.6/src/double_metaphone.o
-        gcc-4.2 -Wl,-F. -bundle -undefined dynamic_lookup -arch i386 -arch ppc -arch x86_64 build/temp.macosx-10.6-universal-2.6/src/fuzzy.o build/temp.macosx-10.6-universal-2.6/src/double_metaphone.o -o build/lib.macosx-10.6-universal-2.6/fuzzy.so
+        gcc-4.2 -fno-strict-aliasing -fno-common -dynamic -DNDEBUG -g -fwrapv -Os -Wall -Wstrict-prototypes 
+            -DENABLE_DTRACE -arch i386 -arch ppc -arch x86_64 -pipe -I/System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6
+            -c src/fuzzy.c -o build/temp.macosx-10.6-universal-2.6/src/fuzzy.o
+        gcc-4.2 -fno-strict-aliasing -fno-common -dynamic -DNDEBUG -g -fwrapv -Os -Wall -Wstrict-prototypes
+            -DENABLE_DTRACE -arch i386 -arch ppc -arch x86_64 -pipe -I/System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6
+            -c src/double_metaphone.c -o build/temp.macosx-10.6-universal-2.6/src/double_metaphone.o
+        gcc-4.2 -Wl,-F. -bundle -undefined dynamic_lookup -arch i386 -arch ppc -arch x86_64
+            build/temp.macosx-10.6-universal-2.6/src/fuzzy.o build/temp.macosx-10.6-universal-2.6/src/double_metaphone.o
+            -o build/lib.macosx-10.6-universal-2.6/fuzzy.so
     Successfully installed Fuzzy
     Cleaning up...
     (fuzzy_cean)Kotai:~ chmullig$ 
