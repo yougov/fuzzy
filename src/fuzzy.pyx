@@ -197,6 +197,7 @@ cdef class Soundex:
         cdef int i
         cdef int written
         cdef char *out
+        cdef char c
 
         written = 0
 
@@ -204,15 +205,16 @@ cdef class Soundex:
         cs = s
         ls = strlen(cs)
         for i from 0<= i < ls:
-            if cs[i] >= 97 and cs[i] <= 122:
-                cs[i] = cs[i] - 32
-            if cs[i] >= 65 and cs[i] <= 90:
+            c = cs[i]
+            if c >= 97 and c <= 122:
+                c = c - 32
+            if c >= 65 and c <= 90:
                 if written == 0:
-                    out[written] = cs[i]
+                    out[written] = c
                     written = written + 1
-                elif self.map[cs[i] - 65] != 48 and (written == 1 or
-                            out[written - 1] != self.map[cs[i] - 65]):
-                    out[written] = self.map[cs[i] - 65]
+                elif self.map[c - 65] != 48 and (written == 1 or
+                            out[written - 1] != self.map[c - 65]):
+                    out[written] = self.map[c - 65]
                     written = written + 1
             if written == self.size:
                 break
