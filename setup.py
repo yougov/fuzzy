@@ -17,12 +17,12 @@ else:
 
 setup(
     name        = 'Fuzzy',
-    version     = '1.0',
+    version     = '1.1',
     ext_modules = ext_modules,
     cmdclass    = cmdclass,
     description = "Fast Python phonetic algorithms",
-    maintainer  = "chmullig",
-    maintainer_email = "chmullig@gmail.com",
+    maintainer  = "YouGov, Plc.",
+    maintainer_email = "dev@yougov.com",
     url         = "https://bitbucket.org/yougov/fuzzy",
     classifiers = [
         'Development Status :: 4 - Beta',
