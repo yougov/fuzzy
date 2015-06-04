@@ -17,7 +17,7 @@ else:
 
 setup_params = dict(
     name='Fuzzy',
-    version='1.1',
+    use_scm_version=True,
     ext_modules=ext_modules,
     cmdclass=cmdclass,
     description="Fast Python phonetic algorithms",
@@ -36,6 +36,9 @@ setup_params = dict(
         'Topic :: Text Processing :: Linguistic',
     ],
     long_description=open('README').read(),
+    setup_requires=[
+        'setuptools_scm',
+    ],
 )
 
 if __name__ == '__main__':
