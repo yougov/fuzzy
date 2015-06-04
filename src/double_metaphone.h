@@ -1,9 +1,6 @@
-/* 
-	Note (jamie @ pmx)
-	double_metaphone.* are based on the perl Metaphone module developed
-	by Maurice Aubrey
-
-	Here's his license info:
+/*
+	double_metaphone is based on the perl Metaphone module developed
+	by Maurice Aubrey and licensed thus:
 
 --------------------------------------------------------------------------------
 DESCRIPTION
@@ -11,11 +8,11 @@ DESCRIPTION
   This module implements a "sounds like" algorithm developed
   by Lawrence Philips which he published in the June, 2000 issue
   of C/C++ Users Journal.  Double Metaphone is an improved
-  version of Philips' original Metaphone algorithm.  
+  version of Philips' original Metaphone algorithm.
 
 COPYRIGHT
 
-  Copyright 2000, Maurice Aubrey <maurice@hevanet.com>. 
+  Copyright 2000, Maurice Aubrey <maurice@hevanet.com>.
   All rights reserved.
 
   This code is based heavily on the C++ implementation by
@@ -23,7 +20,7 @@ COPYRIGHT
   of Kevin Atkinson <kevina@users.sourceforge.net>.
 
   This module is free software; you may redistribute it and/or
-  modify it under the same terms as Perl itself. 
+  modify it under the same terms as Perl itself.
 
 --------------------------------------------------------------------------------
 
@@ -40,7 +37,7 @@ typedef struct
     int bufsize;
     int free_string_on_destroy;
 }
-metastring;      
+metastring;
 
 
 void
