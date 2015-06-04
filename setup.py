@@ -21,7 +21,6 @@ setup(
     ext_modules = ext_modules,
     cmdclass    = cmdclass,
     description = "Fast Python phonetic algorithms",
-    license     = "MIT",
     maintainer  = "chmullig",
     maintainer_email = "chmullig@gmail.com",
     url         = "https://bitbucket.org/yougov/fuzzy",
