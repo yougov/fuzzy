@@ -36,7 +36,6 @@ setup_params = dict(
         'Topic :: Text Processing :: Linguistic',
     ],
     long_description=open('README').read(),
-    zip_safe=False,
 )
 
 if __name__ == '__main__':
