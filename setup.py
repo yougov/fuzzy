@@ -1,4 +1,4 @@
-from setuptools import setup
+import setuptools
 from distutils.extension import Extension
 try:
     from Pyrex.Distutils import build_ext
@@ -15,7 +15,7 @@ if use_pyrex:
 else:
     ext_modules = [Extension('fuzzy', ['src/fuzzy.c', 'src/double_metaphone.c'])]
 
-setup(
+setup_params = dict(
     name='Fuzzy',
     version='1.1',
     ext_modules=ext_modules,
@@ -38,3 +38,6 @@ setup(
     long_description=open('README').read(),
     zip_safe=False,
 )
+
+if __name__ == '__main__':
+    setuptools.setup(**setup_params)
