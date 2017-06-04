@@ -6,7 +6,7 @@ Fuzzy
 Fuzzy is a python library implementing common phonetic algorithms quickly.
 Typically this is in string similarity exercises, but they're pretty versatile.
 
-It uses C Extensions (via Pyrex) for speed.
+It uses C Extensions (via Cython) for speed.
 
 The algorithms are:
 
@@ -23,8 +23,9 @@ except where noted in specific source files.
 
 Installation
 ************
+
 Installation should be easy if you have a C compiler such as gcc. All you should
-need to do is `easy_install`/`pip install` it. If you have Pyrex it will
+need to do is `easy_install`/`pip install` it. If you have Cython it will
 regenerate the C code, otherwise it will use the pre-generated code. Here's a
 basic installation on a clean virtualenv::
 
@@ -50,6 +51,7 @@ basic installation on a clean virtualenv::
 
 Usage
 *****
+
 The functions are quite easy to use!
 
 >>> import fuzzy
@@ -64,6 +66,7 @@ The functions are quite easy to use!
 
 Performance
 ***********
+
 Fuzzy's Double Metaphone was ~10 times faster than the pure python
 implementation by  `Andrew Collins <http://www.atomodo.com/code/double-metaphone>`_
 in some recent `testing <http://chmullig.com/2011/03/pypy-testing/>`_.
