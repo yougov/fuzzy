@@ -10,8 +10,8 @@ params = dict(
     ext_modules=ext_modules,
     description="Fast Python phonetic algorithms",
     maintainer="YouGov, Plc.",
-    maintainer_email="dev@yougov.com",
-    url="https://bitbucket.org/yougov/fuzzy",
+    maintainer_email="jaraco@jaraco.com",
+    url="https://github.com/yougov/fuzzy",
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
@@ -23,7 +23,7 @@ params = dict(
         'Topic :: Text Processing :: Indexing',
         'Topic :: Text Processing :: Linguistic',
     ],
-    long_description=open('README').read(),
+    long_description=open('README.rst').read(),
     setup_requires=[
         'setuptools_scm',
         'cython',
