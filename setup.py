@@ -4,7 +4,7 @@ ext_modules = [
     setuptools.Extension('fuzzy', ['src/fuzzy.pyx', 'src/double_metaphone.c']),
 ]
 
-setup_params = dict(
+params = dict(
     name='Fuzzy',
     use_scm_version=True,
     ext_modules=ext_modules,
@@ -31,4 +31,4 @@ setup_params = dict(
 )
 
 if __name__ == '__main__':
-    setuptools.setup(**setup_params)
+    setuptools.setup(**params)
