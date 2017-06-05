@@ -2,7 +2,6 @@ sudo: false
 language: python
 python:
 - 2.7
-- 3.6
 install:
 - pip install tox "setuptools>=28.2"
 script:
@@ -16,7 +15,7 @@ deploy:
   on:
     tags: true
     all_branches: true
-    python: 3.6
+    python: 2.7
   user: jaraco
   distributions: dists
   skip_upload_docs: true
