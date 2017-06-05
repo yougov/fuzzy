@@ -1,7 +1,13 @@
-.. -*- restructuredtext -*-
+.. image:: https://img.shields.io/pypi/v/Fuzzy.svg
+   :target: https://pypi.org/project/Fuzzy
 
-Fuzzy
-=====
+.. image:: https://img.shields.io/pypi/pyversions/Fuzzy.svg
+
+.. image:: https://img.shields.io/pypi/dm/Fuzzy.svg
+
+.. image:: https://img.shields.io/travis/yougov/fuzzy/master.svg
+   :target: http://travis-ci.org/yougov/fuzzy
+
 
 Fuzzy is a python library implementing common phonetic algorithms quickly.
 Typically this is in string similarity exercises, but they're pretty versatile.
