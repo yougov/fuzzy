@@ -29,7 +29,6 @@ params = dict(
 			]
 		),
 	],
-	python_requires='>=2.7,<3',
 	install_requires=[
 	],
 	extras_require={
