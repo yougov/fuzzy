@@ -1,3 +1,5 @@
+# cython: c_string_type=unicode, c_string_encoding=ascii
+
 import re
 
 

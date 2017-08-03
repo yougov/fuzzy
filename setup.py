@@ -29,7 +29,6 @@ params = dict(
 			]
 		),
 	],
-	python_requires='>=2.7,<3',
 	install_requires=[
 	],
 	extras_require={
@@ -52,7 +51,12 @@ params = dict(
 		'License :: OSI Approved :: MIT License',
 		'License :: OSI Approved :: Artistic License',
 		'Operating System :: POSIX',
+		'Programming Language :: Python :: 2',
 		'Programming Language :: Python :: 2.7',
+		'Programming Language :: Python :: 3',
+		'Programming Language :: Python :: 3.4',
+		'Programming Language :: Python :: 3.5',
+		'Programming Language :: Python :: 3.6',
 		'Topic :: Text Processing',
 		'Topic :: Text Processing :: General',
 		'Topic :: Text Processing :: Indexing',
