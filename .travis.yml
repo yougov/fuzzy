@@ -16,7 +16,7 @@ deploy:
   on:
     tags: true
     all_branches: true
-    python: 2.7
+    python: 3.6
   user: jaraco
   distributions: dists
   skip_upload_docs: true
