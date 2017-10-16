@@ -243,6 +243,8 @@ cdef class DMetaphone:
     def __call__(self, s):
         cdef char *cs
         cdef char **out
+        cdef bytes o1
+        cdef bytes o2
         out = <char **>malloc(sizeof(char *) * 2)
         cs = s
         DoubleMetaphone(cs, out)
