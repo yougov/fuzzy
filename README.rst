@@ -14,10 +14,10 @@ It uses C Extensions (via Cython) for speed.
 
 The algorithms are:
 
- * `Soundex <http://en.wikipedia.org/wiki/Soundex>`_
- * `NYSIIS <http://en.wikipedia.org/wiki/NYSIIS>`_
- * `Double Metaphone <http://en.wikipedia.org/wiki/Metaphone>`_ Based on Maurice
-   Aubrey's C code from his perl implementation.
+* `Soundex <http://en.wikipedia.org/wiki/Soundex>`_
+* `NYSIIS <http://en.wikipedia.org/wiki/NYSIIS>`_
+* `Double Metaphone <http://en.wikipedia.org/wiki/Metaphone>`_ Based on Maurice
+  Aubrey's C code from his perl implementation.
 
 Usage
 =====
