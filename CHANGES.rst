@@ -1,3 +1,8 @@
+1.2.1
+=====
+
+#12: Fixed UnicodeDecodeError in DMetaphone.
+
 1.2
 ===
 
