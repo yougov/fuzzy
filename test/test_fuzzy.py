@@ -14,4 +14,4 @@ def test_soundex_does_not_mutate_strings():
 
 def test_DMetaphone():
 	m = fuzzy.DMetaphone()
-	m("mayer")
+	assert m("mayer") == [b'MR', None]
