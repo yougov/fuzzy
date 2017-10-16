@@ -3,8 +3,6 @@
 
 .. image:: https://img.shields.io/pypi/pyversions/Fuzzy.svg
 
-.. image:: https://img.shields.io/pypi/dm/Fuzzy.svg
-
 .. image:: https://img.shields.io/travis/yougov/fuzzy/master.svg
    :target: http://travis-ci.org/yougov/fuzzy
 

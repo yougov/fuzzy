@@ -11,6 +11,11 @@ with io.open('README.rst', encoding='utf-8') as readme:
 
 name = 'Fuzzy'
 description = 'Fast Python phonetic algorithms'
+nspkg_technique = 'native'
+"""
+Does this package use "native" namespace packages or
+pkg_resources "managed" namespace packages?
+"""
 
 params = dict(
 	name=name,
@@ -25,8 +30,8 @@ params = dict(
 			'fuzzy',
 			[
 				'src/fuzzy.pyx',
-				'src/double_metaphone.c'
-			]
+				'src/double_metaphone.c',
+			],
 		),
 	],
 	install_requires=[
@@ -35,6 +40,7 @@ params = dict(
 		'testing': [
 			'pytest>=2.8',
 			'pytest-sugar',
+			'collective.checkdocs',
 		],
 		'docs': [
 			'sphinx',
