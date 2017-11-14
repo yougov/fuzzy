@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 
+import pytest
 import ctypes
 
 import fuzzy
@@ -12,6 +13,7 @@ def test_soundex_does_not_mutate_strings():
 	assert buffer.value.decode() == "FancyFree"
 
 
+@pytest.mark.xfail(reason="issue #14")
 def test_soundex_result():
 	phrase = 'FancyFree'
 	res = fuzzy.Soundex(4)(phrase)
