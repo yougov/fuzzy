@@ -12,6 +12,12 @@ def test_soundex_does_not_mutate_strings():
 	assert buffer.value.decode() == "FancyFree"
 
 
+def test_soundex_result():
+	phrase = 'FancyFree'
+	res = fuzzy.Soundex(4)(phrase)
+	assert res == 'F521'
+
+
 def test_DMetaphone():
 	m = fuzzy.DMetaphone()
 	assert m("mayer") == [b'MR', None]
