@@ -20,6 +20,11 @@ def test_soundex_result():
 	assert res == 'F521'
 
 
+@pytest.mark.xfail(reason="issue #14")
+def test_soundex_Test():
+	assert fuzzy.Soundex(8)('Test') == 'T2300000'
+
+
 def test_DMetaphone():
 	m = fuzzy.DMetaphone()
 	assert m("mayer") == [b'MR', None]
