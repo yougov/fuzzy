@@ -1,3 +1,5 @@
+# coding: utf-8
+
 from __future__ import unicode_literals
 
 import pytest
@@ -23,6 +25,11 @@ def test_soundex_result():
 @pytest.mark.xfail(reason="issue #14")
 def test_soundex_Test():
 	assert fuzzy.Soundex(8)('Test') == 'T23'
+
+
+@pytest.mark.xfail(reason="issue #14")
+def test_soundex_non_ascii():
+	assert fuzzy.Soundex(8)('Jéroboam') == 'J615'
 
 
 def test_DMetaphone():
