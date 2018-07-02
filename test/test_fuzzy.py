@@ -27,7 +27,7 @@ def test_soundex_Test():
 	assert fuzzy.Soundex(8)('Test') == 'T23'
 
 
-@pytest.mark.xfail(reason="issue #14")
+@pytest.mark.xfail(reason="issue #15")
 def test_soundex_non_ascii():
 	assert fuzzy.Soundex(8)('Jéroboam') == 'J615'
 
