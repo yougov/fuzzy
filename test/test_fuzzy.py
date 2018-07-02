@@ -22,7 +22,7 @@ def test_soundex_result():
 
 @pytest.mark.xfail(reason="issue #14")
 def test_soundex_Test():
-	assert fuzzy.Soundex(8)('Test') == 'T2300000'
+	assert fuzzy.Soundex(8)('Test') == 'T23'
 
 
 def test_DMetaphone():
