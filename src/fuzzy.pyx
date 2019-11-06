@@ -224,10 +224,10 @@ cdef class Soundex:
             out[i] = 48
         out[self.size] = 0
 
-        pout = out
-        free(out)
-
-        return pout
+        try:
+            return out
+        finally:
+            free(out)
 
 
 cdef extern from "double_metaphone.h":
