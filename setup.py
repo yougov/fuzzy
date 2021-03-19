@@ -49,7 +49,7 @@ params = dict(
 		],
 	},
 	setup_requires=[
-		'setuptools_scm>=1.15.0',
+		'setuptools_scm==1.15.0',
 		'cython',
 	],
 	classifiers=[
