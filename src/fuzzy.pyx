@@ -188,10 +188,15 @@ def nysiis(s):
 cdef class Soundex:
     cdef int size
     cdef char *map
+    cdef char* pout
 
     def __init__(self, size):
         self.size = size
         self.map = "01230120022455012623010202"
+        self.pout = <char *>malloc(self.size + 1)
+
+    def __del__(self):
+        free(self.pout)
 
     def __call__(self, s):
         cdef char *cs
@@ -203,7 +208,7 @@ cdef class Soundex:
 
         written = 0
 
-        out = <char *>malloc(self.size + 1)
+        out = self.pout
         cs = s
         ls = strlen(cs)
         for i from 0<= i < ls:
@@ -224,10 +229,7 @@ cdef class Soundex:
             out[i] = 48
         out[self.size] = 0
 
-        pout = out
-        free(out)
-
-        return pout
+        return out
 
 
 cdef extern from "double_metaphone.h":
